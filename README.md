@@ -8,8 +8,10 @@ Oprogramowanie dedykowane dla urządzeń firmy LOGBIT.
 
 ### Wymagania Sprzętowe
 
-- Minikomputer oparty o procesory z rodziny ARM Cortex z systemem opartym o Linux'a np. raspberry PI z raspabianem lub Orange PI z DietPi, minimum jeden port USB, połączenie sieciowe WIFI lub Ethernet (zalecane stałe IP). 
-- przejściówka USB na RS485 (sterownik CH340)
+- Minikomputer oparty o procesory z rodziny ARM Cortex z systemem opartym o Linux'a np. raspberry PI z raspabianem lub Orange PI z DietPi, 
+- minimum jeden port USB, 
+- połączenie sieciowe WIFI lub Ethernet (zalecane stałe IP), 
+- przejściówka USB na RS485 (sterownik CH340),
 - tablica LED ze sterownikiem firmy LOGBIT
 
 ### Wymagania Software
