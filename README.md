@@ -3,21 +3,21 @@
 Moduł ma umożliwić komunikację zewnętrznych systemów z tablicami LED wykorzystywanymi w systemach parkingowych i logistycznych  firmy LOGBIT. Głównym celem jest integracja systemów LOGBIT z oprogramowaniem do rozpoznawania tablic rejestracyjnych.
 
 ## UWAGA
-
+t
 Oprogramowanie dedykowane dla urządzeń firmy LOGBIT.
 
 ### Wymagania Sprzętowe
 
-- Minikomputer oparty o procesory z rodziny ARM Cortex z systemem opartym o Linux'a np. raspberry PI z raspabianem lub Orange PI z DietPi, 
-- minimum jeden port USB, 
-- połączenie sieciowe WIFI lub Ethernet (zalecane stałe IP), 
+- Minikomputer oparty o procesory z rodziny ARM Cortex z systemem opartym o Linux'a np. raspberry PI z raspabianem lub Orange PI z DietPi,
+- minimum jeden port USB,
+- połączenie sieciowe WIFI lub Ethernet (zalecane stałe IP),
 - przejściówka USB na RS485 (sterownik CH340),
 - tablica LED ze sterownikiem firmy LOGBIT
 
 ### Wymagania Software
 
 - linux lub embeded system oparty o linux'a, kernel minimum 4.x
-- gcc/g++ minimum 7.x (polecana wersja 7.2.0) (wymagana flaga ```-std=c++11```) 
+- gcc/g++ minimum 7.x (polecana wersja 7.2.0) (wymagana flaga ```-std=c++11```)
 - [nlohmann-json](https://github.com/nlohmann/json/releases) biblioteka do obsługi formatu json
 
 
