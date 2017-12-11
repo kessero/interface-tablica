@@ -3,7 +3,7 @@
 Moduł ma umożliwić komunikację zewnętrznych systemów z tablicami LED wykorzystywanymi w systemach parkingowych i logistycznych  firmy LOGBIT. Głównym celem jest integracja systemów LOGBIT z oprogramowaniem do rozpoznawania tablic rejestracyjnych.
 
 ## UWAGA
-t
+
 Oprogramowanie dedykowane dla urządzeń firmy LOGBIT.
 
 ### Wymagania Sprzętowe
