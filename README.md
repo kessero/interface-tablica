@@ -14,10 +14,10 @@ Oprogramowanie dedykowane dla urządzeń firmy LOGBIT.
 - przejściówka USB na RS485 (sterownik CH340),
 - tablica LED ze sterownikiem firmy LOGBIT
 
-### Wymagania Software
+### Wymagania Programowe
 
 - linux lub embeded system oparty o linux'a, kernel minimum 4.x
-- gcc/g++ minimum 7.x (polecana wersja 7.2.0) (wymagana flaga ```-std=c++11```)
+- gcc/g++ minimum 6.x (polecana wersja 7.2.0) (wymagana flaga ```-std=c++11```)
 - [nlohmann-json](https://github.com/nlohmann/json/releases) biblioteka do obsługi formatu json
 
 

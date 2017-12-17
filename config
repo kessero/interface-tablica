@@ -1,0 +1,5 @@
+{
+"SOCKETport": 9876,
+"rs485speed": 9600,
+"USBconverter": "/dev/ttyUSB0"
+}
