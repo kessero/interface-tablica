@@ -42,9 +42,6 @@ Prepare_Data::Prepare_Data(std::string port_n, int baud_r, int sock_n){
   data_send_to_LED.push_back(configuration);
   int seven_fields_are_for_configuration = 7;
   int counter = complet_recive_data.size()-seven_fields_are_for_configuration;
-  //TODO out
-  std::cout << "licznik: " << counter << "\n";
-
   for (int i = 2; i< counter; i++){
     data_send_to_LED.push_back(complet_recive_data[i+6].get<int>());
     //TODO out
@@ -84,7 +81,8 @@ Prepare_Data::Prepare_Data(std::string port_n, int baud_r, int sock_n){
    int n;
    if(rec_data == 1){
    n = write(sock_n,"OK",2);
- }else{
-  n = write(sock_n,"Transmision ERROR!!!",100);
-}
+    }else{
+      n = write(sock_n,"Transmision ERROR!!!",100);
+    }
+
 }
