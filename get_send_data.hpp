@@ -10,7 +10,8 @@ public:
 
 private:
   nlohmann::json parse_data_from_socket_stream(int sock_d);
-  int calculate_configuration_number(nlohmann::json complet_d);
+  int calculate_configuration_number(nlohmann::json recive_d);
+  std::vector <int> sort_data_recived(nlohmann::json recive_data, int config_number);
 
 };
 #endif

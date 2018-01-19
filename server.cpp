@@ -62,7 +62,6 @@ int sockfd, newsockfd, port_number, pid;
          if (pid == 0)  {
              close(sockfd);
               Prepare_Data p_data(config["USBconverter"], config["rs485speed"], newsockfd);
-  //           get_send_data(newsockfd);
              exit(0);
          }
          else close(newsockfd);
