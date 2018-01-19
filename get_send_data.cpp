@@ -4,22 +4,22 @@
 nlohmann::json Prepare_Data::parse_data_from_socket_stream(int sock_data){
   int n;
   using json = nlohmann::json;
-  std::stringstream ss;
+  std::stringstream stringStream;
   //$address $speed $delete $size $place $red $green $blue $l1 $l2 $l3 $l4 $l5 $l6 $l7 $l8 $loop_work
   unsigned char buffer[500];
   bzero(buffer,500);
   n = read(sock_data,buffer,499);
   std::cout <<"bufor: "<< buffer << "\n";
-  //TODO out
+  //TODO out cout after done
   for(int i=0; i<n;i++){
     std::cout << buffer[i];
   }
   // fill a stream with JSON text
-     ss << buffer;
+     stringStream << buffer;
 
   // parse and serialize JSON
-  json j_complete_data = json::parse(ss);
-//TODO out
+  json j_complete_data = json::parse(stringStream);
+//TODO out cout after done
   for (int i=0; i<j_complete_data.size();i++){
     std::cout << j_complete_data[i];
   }
@@ -42,7 +42,7 @@ Prepare_Data::Prepare_Data(std::string port_n, int baud_r, int sock_n){
   data_send_to_LED.push_back(configuration);
   int seven_fields_are_for_configuration = 7;
   int counter = complet_recive_data.size()-seven_fields_are_for_configuration;
-  //TODO out
+  //TODO out cout line after done testing
   std::cout << "licznik: " << counter << "\n";
 
   for (int i = 2; i< counter; i++){
