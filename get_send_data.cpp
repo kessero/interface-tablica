@@ -42,12 +42,8 @@ Prepare_Data::Prepare_Data(std::string port_n, int baud_r, int sock_n){
   data_send_to_LED.push_back(configuration);
   int seven_fields_are_for_configuration = 7;
   int counter = complet_recive_data.size()-seven_fields_are_for_configuration;
-<<<<<<< HEAD
   //TODO out cout line after done testing
   std::cout << "licznik: " << counter << "\n";
-
-=======
->>>>>>> c7a4c475d41cb8a65712744fbd7f54ee0dd9da92
   for (int i = 2; i< counter; i++){
     data_send_to_LED.push_back(complet_recive_data[i+6].get<int>());
     //TODO out
